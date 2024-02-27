@@ -1,0 +1,2 @@
+Sitemap: https://oscar-privitera.github.io/sitemap.xml
+User-agent: *
