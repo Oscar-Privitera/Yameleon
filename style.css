@@ -1,0 +1,162 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+body {
+    background: rgb(26, 26, 102);
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+header img {
+    height: 50px;
+    width: 50px;
+    border-radius: 12px;
+}
+
+header ul {
+    /* background: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header li {
+    list-style: none;
+    width: fit-content;
+    margin-right: 1.5rem;
+}
+
+header li a {
+    text-decoration: none;
+}
+
+.hero-banner {
+    height: calc(100vh - 90px);
+    padding: 1rem 2rem;
+    display: flex;
+    margin-top: 0;
+}
+
+.hero-banner-left {
+    width: 60%;
+    height: 100%;
+    /* background: green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-banner-left h1 {
+    margin-top: -150px;
+    font-size: 48px;
+}
+
+.hero-banner-left p, .section-container-txt-title-tiny-txt {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(159, 159, 255);
+    margin-top: 1rem;
+}
+
+.hero-banner-left h3 {
+    width: 70%;
+    margin-top: 2rem;
+}
+
+.hero-banner-left button {
+    width: fit-content;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: rgb(26, 26, 102);
+    margin-top: 3rem;
+}
+
+.hero-banner-right {
+    width: 40%;
+    height: 100%;
+    /* background: blue; */
+    display: flex;
+    align-items: center;
+}
+
+.hero-banner-right--circle {
+    border-radius: 50%;
+    /* background: greenyellow; */
+    background-size: cover;
+    background-position: center;
+}
+
+.circle-one {
+    min-height: 200px;
+    min-width: 200px;
+    background-image: url("./images/yam2.jpeg");
+    margin-top: -200px;
+}
+
+.circle-two {
+    min-height: 150px;
+    min-width: 150px;
+    background-image: url("./images/yam5.jpeg");
+    margin-top: 150px;
+    margin-right: 50px;
+}
+
+.circle-three {
+    min-height: 125px;
+    min-width: 125px;
+    background-image: url("./images/yam1.jpeg");
+}
+
+.circle-four {
+    min-height: 250px;
+    min-width: 250px;
+    background-image: url("./images/yam6.jpeg");
+    margin-left: -300px;
+    margin-top: -350px;
+}
+
+section {
+    display: flex;
+    padding: 1rem 2rem;
+    margin-top: 8rem;
+}
+
+.section-container-txt, .section-container-img {
+    width: 50%;
+}
+
+.section-container-img {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+.section-container-img img {
+    border-radius: 35px;
+    height: 300px;
+    width: 300px;
+}
+
+.section-container-txt h2 {
+    font-size: 36px;
+    margin-bottom: 2rem;
+}
+
+.section-container-txt-title-tiny-txt {
+    margin-bottom: 1rem;
+}
+
