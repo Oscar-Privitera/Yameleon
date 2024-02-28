@@ -7,6 +7,10 @@
     font-weight: bold;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: rgb(26, 26, 102);
 }
@@ -81,8 +85,12 @@ header li a {
     border: none;
     outline: none;
     border-radius: 10px;
-    color: rgb(26, 26, 102);
     margin-top: 3rem;
+}
+
+.hero-banner button a {
+    text-decoration: none;
+    color: rgb(26, 26, 102);
 }
 
 .hero-banner-right {
@@ -135,6 +143,14 @@ section {
     margin-top: 8rem;
 }
 
+section p {
+    margin-top: 1rem;
+}
+
+.about-section {
+    margin-top: 0;
+}
+
 .section-container-txt, .section-container-img {
     width: 50%;
 }
@@ -147,8 +163,8 @@ section {
 
 .section-container-img img {
     border-radius: 35px;
-    height: 300px;
-    width: 300px;
+    height: 350px;
+    width: 350px;
 }
 
 .section-container-txt h2 {
@@ -160,3 +176,43 @@ section {
     margin-bottom: 1rem;
 }
 
+.conclusion-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conclusion-card {
+    position: relative;
+    width: calc(100% - 4rem);
+    height: 900px;
+    border-radius: 20px;
+    background: url("./images/Japanese-Cherry-Blossom-Landscape-AI-Generated-4K-Wallpaper-1-2048x1152.webp");
+    background-size: cover;
+    background-position: top;
+}
+
+.conclusion-card--darkcover {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    background: rgb(2, 0, 40);
+    background: linear-gradient(180deg, rgba(2, 0, 40, 0) 15%, rgba(2, 0, 40, 1) 40%);
+    padding: 2rem;
+    padding-top: 15rem;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.conclusion-card--darkcover h2 {
+    font-size: 42px;
+}
+
+.conclusion-card--darkcover h2, .conclusion-card--darkcover h3 {
+    margin-bottom: 2rem;
+}
+
+.conclusion-card--darkcover p {
+    margin-top: 1rem;
+}
