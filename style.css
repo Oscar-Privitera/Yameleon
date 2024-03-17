@@ -47,7 +47,7 @@ header li a {
 }
 
 .hero-banner {
-    height: calc(100vh - 90px);
+    height: 700px;
     padding: 1rem 2rem;
     display: flex;
     margin-top: 0;
@@ -151,8 +151,13 @@ section p {
     margin-top: 0;
 }
 
-.section-container-txt, .section-container-img {
-    width: 50%;
+.section-container-txt {
+    width: 70%;
+    padding-right: 5rem;
+}
+
+.section-container-img {
+    width: 30%;
 }
 
 .section-container-img {
@@ -215,4 +220,122 @@ section p {
 
 .conclusion-card--darkcover p {
     margin-top: 1rem;
+}
+
+footer {
+    height: 300px;
+    width: 100%;
+    background: rgb(36, 36, 140);
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer--container-social-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.icon-reddit {
+    height: 75px;
+}
+
+.icon-youtube {
+    height: 75px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a p {
+    text-align: center;
+    margin-top: .5rem;
+}
+
+
+@media (max-width: 1024px) {
+    .section-container-img img {
+        border-radius: 35px;
+        height: 250px;
+        width: 250px;
+    }
+
+    .circle-one {
+        min-height: 100px;
+        min-width: 100px;
+        margin-top: -150px;
+    }
+
+    .circle-two {
+        min-height: 75px;
+        min-width: 75px;
+        margin-top: 150px;
+        margin-right: 50px;
+    }
+
+    .circle-three {
+        min-height: 70px;
+        min-width: 70px;
+    }
+
+    .circle-four {
+        min-height: 125px;
+        min-width: 125px;
+        margin-left: -200px;
+        margin-top: -350px;
+    }
+}
+
+@media(max-width:768px) {
+
+    header {
+        flex-direction: row-reverse;
+    }
+    header ul {
+        display: block;
+        margin-top: 2rem;
+    }
+
+
+    .hero-banner-right {
+        display: none;
+    }
+
+    .hero-banner {
+        height: 100vh;
+        display: block;
+        text-align: center;
+    }
+
+    .hero-banner-left {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-banner-left h3 {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .hero-banner-left button {
+        transform: translate(-50% -50%);
+    }
+
+    section {
+        display: block;
+    }
+
+    .section-container-txt, .section-container-img {
+        width: 100%;
+        text-align: center;
+        padding-right: 0;
+    }
+
+    section img {
+        margin-top: 2rem;
+    }
+
 }

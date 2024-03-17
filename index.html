@@ -61,9 +61,11 @@
                     indépendamment l’un de l’autre, lui permettant de scruter son environnement avec une précision
                     étonnante.
                 </h3>
-                <button>
-                    <a href="#about">Découvrir le yaméléon</a>
-                </button>
+                <div class="hero-banner--container-btn">
+                    <button>
+                        <a href="#about">Découvrir le yaméléon</a>
+                    </button>
+                </div>
             </div>
             <div class="hero-banner-right">
                 <div class="hero-banner-right--circle circle-one"></div>
@@ -218,15 +220,30 @@
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="footer--container-social-icons">
+            <a href="https://www.reddit.com/user/Yammeleon/" target="_blank">
+                <img src="./images/reddit.png" alt="Lien reddit" class="icon-reddit" />
+                <p>Reddit</p>
+            </a>
+            <a href=" https://www.youtube.com/@Yammeleon-sk9sg" target="_blank">
+                <img src="./images/youtube.png" alt="Lien youtube" class="icon-youtube" />
+                <p>Youtube</p>
+            </a>
+        </div>
+    </footer>
 </body>
 
 </html>
 
 <script>
     if ('serviceWorker' in navigator) {
-        window.addEventListener('load', function () {
-            navigator.serviceWorker.register('/service-worker.js');
-        });
+        navigator.serviceWorker.register('/service-worker.js')
+            .then((registration) => {
+                console.log('Service Worker enregistré avec succès :', registration);
+            })
+            .catch((error) => {
+                console.error('Erreur lors de l\'enregistrement du Service Worker :', error);
+            });
     }
 </script>
